@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020237"
+    android:forceHasOverlappingRendering="false"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/gider_turu"
+        android:layout_width="365dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/ic_baseline_add_shopping_cart_24"
+        android:ems="10"
+        android:hint="Gider Türü Giriniz"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/harcamalariniz" />
+
+    <EditText
+        android:id="@+id/miktar"
+        android:layout_width="165dp"
+        android:layout_height="70dp"
+        android:background="@drawable/edittextarkaplan"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+        android:ems="10"
+        android:hint="Miktar Giriniz"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gider_turu"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <Button
+        android:id="@+id/btnGider"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:background="@drawable/buttonarkaplan"
+        android:text="Gider\nEkle"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/miktar"
+        app:layout_constraintTop_toBottomOf="@+id/gider_turu"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <Button
+        android:id="@+id/btnKota"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:background="@drawable/buttonarkaplan"
+        android:text="Kota\nBelirle"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/miktar"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gider_turu"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <TextView
+        android:id="@+id/toplam_gider"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextarkaplan"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Toplam Gider: "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/kalan_kota"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kalan_kota"
+        android:layout_width="178dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittextarkaplan"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Kalan Kota: "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/harcamalariniz"
+        android:layout_width="365dp"
+        android:layout_height="353dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edittextarkaplan"
+        android:fadeScrollbars="false"
+        android:gravity="center_horizontal"
+        android:isScrollContainer="false"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="always"
+        android:padding="5dp"
+
+
+
+        android:text="HARCAMALARINIZ\n"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
